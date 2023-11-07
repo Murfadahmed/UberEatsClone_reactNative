@@ -24,7 +24,7 @@ export  let LocalRestaurent = [
         categories: ['desi_food', 'street_food'],
         price: '$$',
         rating: 4.2,
-        review: 123
+        review: 123,
     },
     {
         image_url: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1674&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -96,8 +96,8 @@ export default function Resturentitems(props) {
         <TouchableOpacity activeOpacity={0.8} style={{ marginBottom: 30 }}>
             {props.ResturentData.map((restaurent, index) => (
 
-                <View style={{
-                    marginTop: 10,
+                <View id={index}style={{
+                    marginTop: 2,
                     padding: 15,
                     backgroundColor: 'white',
                 }}>
@@ -132,10 +132,10 @@ const RestaurentInfo = (props) => (
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginTop: 10,
-        backgroundColor: 'lightgrey',
-        padding: 5,
-        borderRadius: 5
+        // marginTop: 10,
+        // backgroundColor: 'lightgrey',
+        // padding: 5,
+        // borderRadius: 5
     }}>
         <View>
             <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{props.name}</Text>
