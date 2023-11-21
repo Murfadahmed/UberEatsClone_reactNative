@@ -79,7 +79,7 @@ export default function MenuItems() {
             <FoodInfo name={food} category={food} review={food} />
             <FoodImage image={food} />
           </View>
-          <Divider width={0.5} orientation="vertical"/>
+          <Divider width={0.5} orientation="vertical" />
         </View>
       ))}
     </ScrollView>
@@ -87,7 +87,7 @@ export default function MenuItems() {
 }
 
 const FoodInfo = (props) => (
-  <View style={{}}>
+  <View style={{width:240,justifyContent:'space-evenly'}}>
     <Text style={styles.titleInfoStyle}>{props.name.name}</Text>
     <Text>{props.category.categories[0]}</Text>
     <Text>{props.review.rating}</Text>

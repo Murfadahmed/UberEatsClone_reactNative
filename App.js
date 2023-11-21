@@ -3,5 +3,6 @@ import RestaurentDetails from "./screen/RestaurentDetails";
 
 export default function App() {
   return <RestaurentDetails />
+  // return <Home/>
 
 }

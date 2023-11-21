@@ -2,6 +2,7 @@
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
     "expo": "^49.0.3",
+    "node": "^21.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.3",
